@@ -1,22 +1,33 @@
-.App {
+body {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.wordToFind {
   text-align: center;
+  font-size: 5rem;
+  letter-spacing: 1.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
+.keyboard {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-gap: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.key {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #e1e1e1;
 }
-
-.App-link {
-  color: #09d3ac;
+.red {
+  background-color: red !important;
+}
+.key:hover {
+  cursor: pointer;
+}
+.newGameBtn {
+  display: none;
 }
